@@ -1,0 +1,36 @@
+{
+  "name" : "coolms/cldr-calendar",
+  "description" : "CoolMS2 CLDR Calendar Module",
+  "version" : "0.1.0",
+  "type" : "library",
+  "keywords" : [ "zf2", "coolms", "coolms2", "cldr", "calendar" ],
+  "homepage" : "https://github.com/coolms/cldr-calendar",
+  "license" : "BSD-3-Clause",
+  "authors" : [ {
+    "name" : "Dmitry Popov",
+    "email" : "d.popov@altgraphic.com",
+    "role" : "Developer"
+  } ],
+  "require" : {
+    "php" : ">=5.5.0",
+    "coolms/calendar" : "dev-master@dev"
+  },
+  "require-dev" : {
+    "phpunit/phpunit" : "~4.5"
+  },
+  "autoload" : {
+    "psr-4" : { "CmsCldrCalendar\\" : "src/" }
+  },
+  "autoload-dev" : {
+    "psr-4": { "CmsCldrCalendarTest\\" : "tests/" }
+  },
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "0.1.x-dev"
+    }
+  },
+  "repositories" : [ {
+    "type" : "vcs",
+    "url" : "https://www.github.com/coolms/calendar"
+  } ]
+}
