@@ -27,6 +27,7 @@ class Module implements
      */
     public function init(ModuleManager $moduleManager)
     {
+        $moduleManager->loadModule('CmsCldr');
         $moduleManager->loadModule('CmsCalendar');
     }
 
