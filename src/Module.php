@@ -14,11 +14,13 @@ use Zend\Loader\ClassMapAutoloader,
     Zend\Loader\StandardAutoloader,
     Zend\ModuleManager\Feature\AutoloaderProviderInterface,
     Zend\ModuleManager\Feature\ConfigProviderInterface,
+    Zend\ModuleManager\Feature\InitProviderInterface,
     Zend\ModuleManager\ModuleManager;
 
 class Module implements
     AutoloaderProviderInterface,
-    ConfigProviderInterface
+    ConfigProviderInterface,
+    InitProviderInterface
 {
     /**
      * @param ModuleManager $moduleManager
