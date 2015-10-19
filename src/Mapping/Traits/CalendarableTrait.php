@@ -10,8 +10,7 @@
 
 namespace CmsCldrCalendar\Mapping\Traits;
 
-use ArrayObject,
-    Zend\Form\Annotation as Form,
+use Zend\Form\Annotation as Form,
     CmsCldrCalendar\Mapping\CalendarInterface;
 
 /**
@@ -31,14 +30,6 @@ trait CalendarableTrait
      * @Form\Exclude()
      */
     protected $calendar = [];
-
-    /**
-     * __construct
-     */
-    public function __construct()
-    {
-        $this->calendar = new ArrayObject($this->calendar);
-    }
 
     /**
      * @param CalendarInterface $calendar
